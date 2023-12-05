@@ -50,6 +50,12 @@
     crop된 사진들을 crawling한 메뉴 이미지와 유사도 측정하여 최종 결과를 확인하시면 됩니다.
     
 
-1. 텍스트와 
+3. **FooBao-textOCR1** 에서는
+
+   메뉴판에서 메뉴 텍스트만을 OCR하기 위한 전처리로 Yolov5로 학습된 detectNblur,
+
+   그리고 Blur된 메뉴판에서 선명한 메뉴 텍스트를 pororo를 이용하여 OCR,
+
+   마지막으로 txt로 저장된 메뉴 이름들로 description을 생성하여 CLIP에서 feature extraction 후 리뷰 사진들과 유사도 측정하여 최종 결과를 확인하시면 됩니다.
 
 자세한 내용은 각 reposit의 readme를 다시 참조해주시길 바랍니다.
